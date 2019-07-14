@@ -37,6 +37,7 @@ Route::get('/wishlist', 'PagesController@wishlist');
 Route::get('/removefromnews', 'PagesController@removefromnews');
 Route::get('/removefromwish/{id}', 'PagesController@removefromwish');
 Route::get('/removefromorders/{id}', 'PagesController@removefromorders');
+Route::get('/removefromnews', 'PagesController@removefromnews');
 Route::post('/validateprofpic', 'Auth\RegisterController@validateprofpic');
 Route::post('/addtocart' , 'PagesController@addtocart');
 Route::post('/postdelguy', 'PagesController@postdelguy');

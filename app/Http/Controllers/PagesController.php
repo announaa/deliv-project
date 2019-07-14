@@ -448,14 +448,15 @@ class PagesController extends Controller
 
     public function change_pass()
     {
+        $chanswer = null;
         if( bcrypt($_POST['cpass']) != auth::user()->password)
-        return -1;
+        return back()->with($chanswer , "current password is wrong" );
         else
         if($_POST['npass'] != $_POST['cnpass'])
-        return -2;
+        return back()->with($chanswer , "confirmed password does not match the new one" );
         else
         user::where('id', auth::user()->id)->update(['password'=> bcrypt($_POST['cnpass'])]);
-        return 1;
+        return back()->with($chanswer , "succesfully changed" );
     }
 
     public function wishlist()

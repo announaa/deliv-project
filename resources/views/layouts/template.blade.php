@@ -290,7 +290,7 @@
 							</form>								
 							@else
 							<p>Subscribed to <strong>NEWSLETTER</strong>
-								<button name="unsubscribe" class="newsletter-btn primary-btn" onclick="href.location='/removefromnews'"><i class="fa fa-envelope"></i> UnSubscribe</button>
+								<button name="unsubscribe" class="newsletter-btn primary-btn" onclick="location.href='/removefromnews'"><i class="fa fa-envelope" onclick="href.location='/removefromnews'"></i> UnSubscribe</button>
 							</p>
 							@endif
 							@endauth
@@ -438,29 +438,18 @@ class="close" title="Close Modal">&times;</span>
   <!-- Modal Content -->
   <form class="modal-content animate" action="/action_page.php">
     <div class="container" >
-			<div class="product-options">
-					<label>
+			
 						Size
 						<select class="input-select">
 							<option value="0">X</option>
 						</select>
-					</label>
-					<label>
-						Color
-						<select class="input-select">
-							<option value="0">Red</option>
-						</select>
-					</label>
-				</div>
-
-				
 				<div class="input-number">
 							Qty
 							<input type="number" style="width:1em;">
 							<span class="qty-up">+</span>
 							<span class="qty-down">-</span>
 						</div>
-						<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
+						<button class="add-to-cart-btna primary-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
 					</div>
 		
 	</div>

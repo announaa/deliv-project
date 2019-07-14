@@ -33,7 +33,8 @@
       class="close" title="Close Modal">&times;</span>
       
         <!-- Modal Content -->
-        <form class="modal-content animate" action="/change_pass" method="POST">
+        <form class="modal-content animate" name="changep" action="/change_pass" method="POST">
+            @csrf
             <div class="container" style="margin:10%;margin-left:0%;">
                     <span><h2> Change your password: </h2></span><hr>
                   <div class="product-options">
@@ -49,10 +50,13 @@
                                   Confirm Password: 
                                   <input type="password" class="input" name="cnpass" id="cnpass">
                                 </label>
-                                <button style="margin-left:10%;" class="primary-btn" name="change pass" id="chpassb">Submit</button> 
+                                <button type="submit" style="margin-left:10%;" class="primary-btn" name="change pass" id="chpassb">Submit</button> 
                             </div>
                           </div>
         </form>
+        @isset($chanswer)
+         <script>alert("yes")</script>
+        @endisset
         <script>
 				// Get the modal
 				var modal2 = document.getElementById('chpass');

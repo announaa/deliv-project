@@ -110,8 +110,8 @@ $(document).ready(function(){
 });
     /*--End of change profile picture--*/
 
-    /*--Add to cart--*/
-    $('.add-to-cart-btn').click(function(){
+    /*--Add to cart--*/  // we added a to the class name ....................................
+    $('.add-to-cart-btna').click(function(){
     
         var id = $(this).attr('id');
         
@@ -199,12 +199,18 @@ $(document).ready(function(){
     });
 
     /*--changing password--*/
-    $('#chpassb').click(function(){
+    $('#cchpassb').click(function(){
         
         var cpass=$('#cpass');
         var npass=$('#npass');
         var cnpass=$('#cnpass');
 
+        if(cpass == "")
+        alert('please enter the old password');
+        else if(npass == "" || cnpass == "" )
+        alert("please enter the new password and confirm it");
+        else
+        {
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -229,6 +235,7 @@ $(document).ready(function(){
                 alert('error');
             }
         });
+    }
     });
     /*--End of changing password--*/
 

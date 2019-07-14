@@ -95,7 +95,7 @@
 												</div>
 											</div>
 											<div class="add-to-cart">
-												<button id="{{$i->Product_Id}}" class="add-to-cart-btn"><i class="fa fa-shopping-cart" ></i> add to cart</button>
+												<button id="{{$i->Product_Id}}" class="add-to-cart-btn" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-shopping-cart" ></i> add to cart</button>
 											</div>
 										</div>
 										<!-- /product -->
