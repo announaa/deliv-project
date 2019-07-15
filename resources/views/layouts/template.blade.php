@@ -436,33 +436,47 @@
 class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="container" >
-			
-						Size
-						<select class="input-select">
-							<option value="0">X</option>
-						</select>
-				<div class="input-number">
-							Qty
-							<input type="number" style="width:1em;">
-							<span class="qty-up">+</span>
-							<span class="qty-down">-</span>
-						</div>
-						<button class="add-to-cart-btna primary-btn"><i class="fa fa-shopping-cart"></i> add to cart</button>
-					</div>
-		
-	</div>
+  <form class="modal-content animate" action="/action_page.php" style="width:40%;">
+		<table class="table">
+			<thead><tr><td><h3>options</h3></td></tr></thead>
+			<tbody>
+			<tr><td><h4>Size</h4> /kg</td><td><select class="input-select" name="osize">
+					<option value="0">X</option>
+					<option value="1">1/4</option>
+					<option value="2">1/2</option>
+					<option value="3">3/4</option>
+					<option value="4">1</option>
+				</select></td></tr>
+			<tr><td><h4>Qty</h4></td><td><input type="number" class="input" style="width:20%;" name="oquantity"></td></tr>
+			<tr><td><button class="add-to-cart-btna primary-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></td></tr>			
+		</tbody></table>
   </form>
 </div>
+
+
+<!-- The Modal -->
+<div id="id02" class="modal">
+		<span onclick="document.getElementById('id02').style.display='none'" 
+	  class="close" title="Close Modal">&times;</span>
+	  
+		<!-- Modal Content -->
+		<form class="modal-content animate" action="/action_page.php" style="width:40%;">
+			  <table class="table">
+				  <thead><tr><td><h3>options</h3></td></tr></thead>
+				  <tbody>
+				  <tr><td><h4>Size</h4> /kg</td><td><select class="input-select" name="osize">
+						  <option value="0">X</option>
+						  <option value="1">1/4</option>
+						  <option value="2">1/2</option>
+						  <option value="3">3/4</option>
+						  <option value="4">1</option>
+					  </select></td></tr>
+				  <tr><td><h4>Qty</h4></td><td><input type="number" class="input" style="width:20%;" name="oquantity"></td></tr>
+				  <tr><td><button class="add-to-cart-btna primary-btn"><i class="fa fa-shopping-cart"></i> add to cart</button></td></tr>			
+			  </tbody></table>
+		</form>
+	  </div>
 		
-
-
-
-
-
-
-
 
 
 
@@ -486,7 +500,7 @@ class="close" title="Close Modal">&times;</span>
 					modal.style.display = "none";
 				  }
 				}
-				</script>
+
 		
 
 	</body>

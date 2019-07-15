@@ -52,11 +52,11 @@
 						<div class="section-title">
 							<h3 class="title">Top Selling</h3>
 							<div class="section-nav">
-								<ul class="section-tab-nav tab-nav">
-									@foreach ($category as $item)
-								<li><a class="cat-a" id="{{$item->Category_Id}}" data-toggle="tab" href="#tab1">{{$item->Category_Name}}</a></li>
-									@endforeach
-								</ul>
+								<!--<ul class="section-tab-nav tab-nav">
+									
+								<li><a class="cat-a" id="" data-toggle="tab" href="#tab"></a></li>
+							
+								</ul>-->
 							</div>
 						</div>
 					</div>
@@ -90,17 +90,15 @@
 												</div>
 												<div class="product-btns">
 													<button class="add-to-wishlist" id="{{$i->Product_Id}}" ><i class="fa fa-heart-o"></i><span class="tooltipp">add to wishlist</span></button>
-													<button class="add-to-compare" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-exchange"></i><span class="tooltipp">quick buy</span></button>
+													<button class="add-to-compare" onclick="document.getElementById('id01').style.display='block'" ><i class="fa fa-exchange"></i><span class="tooltipp">quick buy</span></button>
 													<button class="quick-view"><i class="fa fa-eye" onclick="location.href='/product/{{$i->Product_Id}}';" ></i><span class="tooltipp">view</span></button></a>
 												</div>
 											</div>
 											<div class="add-to-cart">
-												<button id="{{$i->Product_Id}}" class="add-to-cart-btn" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-shopping-cart" ></i> add to cart</button>
+												<button id="{{$i->Product_Id}}" class="add-to-cart-btn"><i class="fa fa-shopping-cart" ></i> add to cart</button>
 											</div>
 										</div>
 										<!-- /product -->
-
-										
 
 										@endforeach
 									</div>
@@ -179,14 +177,7 @@
 						<div class="section-title">
 							<h3 class="title">New Products</h3>
 							<div class="section-nav">
-								<ul class="section-tab-nav tab-nav">
-									@foreach ($category as $item)
-								<li><a class="cat-a" id="{{$item->Category_Id}}" data-toggle="tab" href="#tab2">{{$item->Category_Name}}</a></li>
-									@endforeach
-									<!--<li><a data-toggle="tab" href="#tab2">Smartphones</a></li>
-									<li><a data-toggle="tab" href="#tab2">Cameras</a></li>
-									<li><a data-toggle="tab" href="#tab2">Accessories</a></li>-->
-								</ul>
+								
 							</div>
 						</div>
 					</div>

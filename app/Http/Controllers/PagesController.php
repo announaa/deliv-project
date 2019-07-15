@@ -557,4 +557,5 @@ public function removefromorders($id)
     DB::table('orders')->where('Order_Id' , $id)->delete();
     return back();
 }
+
 }

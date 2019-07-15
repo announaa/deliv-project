@@ -115,8 +115,8 @@
 							<div class="add-to-cart">
 								<div class="qty-label">
 									Qty
-									<div class="input-number">
-										<input type="number">
+									<div class="input-number" >
+										<input type="number" name="quan">
 										<span class="qty-up">+</span>
 										<span class="qty-down">-</span>
 									</div>
@@ -126,14 +126,14 @@
 
 							<ul class="product-btns">
 								<li><a href="#"><i class="fa fa-heart-o"></i> add to wishlist</a></li>
-								<li><a href="#"><i class="fa fa-exchange"></i> add to compare</a></li>
+							<li><a><i class="fa fa-exchange"></i> quick buy</a></li>
 							</ul>
 
-							<ul class="product-links">
+							<!--<ul class="product-links">
 								<li>Category:</li>
 								<li><a href="#">Headphones</a></li>
 								<li><a href="#">Accessories</a></li>
-							</ul>
+							</ul>-->
 
 							<ul class="product-links">
 								<li>Share:</li>

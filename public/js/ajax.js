@@ -110,8 +110,8 @@ $(document).ready(function(){
 });
     /*--End of change profile picture--*/
 
-    /*--Add to cart--*/  // we added a to the class name ....................................
-    $('.add-to-cart-btna').click(function(){
+    /*--Add to cart--*/
+    $('.add-to-cart-btn').click(function(){
     
         var id = $(this).attr('id');
         
